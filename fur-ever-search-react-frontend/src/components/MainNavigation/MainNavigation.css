@@ -1,0 +1,153 @@
+.main-navigation {
+  width: 100%;
+  height: 4.5rem;
+  background: #525151;
+  background-image: url('http://localhost:3000/statics/black_header_background.jpg');
+  position: fixed;
+  z-index: 1;
+  box-shadow: 3px 1px 0px 2px rgba(129, 175, 86, 0.486);
+  margin-bottom: 48px;
+  margin-top: -24px;
+}
+
+.main-navigation nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.main-navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  width: 100%;
+}
+
+.main-navigation li {
+  margin: 0 0.5rem;
+}
+
+.main-navigation a {
+  display: block;
+  padding: 0.4rem 0.8rem;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+}
+
+.main-navigation a:hover,
+.main-navigation a:active {
+  box-shadow: 0px 0px 0px 2px rgba(0, 255, 255, 0.836);
+  background: rgb(255, 255, 255);
+  color: #5465c5;
+}
+
+.fur-ever-searcher {
+  color:#ebffba;
+  font-size: 25px;
+}
+.fur-ever-searcher:hover {
+  color:#c9ff65;
+  font-size: 30px;
+}
+
+.home_icon {
+  justify-content: flex-start;
+  padding-left: 30px !important;
+}
+
+.my_content {
+  justify-content: flex-end;
+  padding-right: 40px !important;
+}
+
+.header_title {
+  justify-content: center;
+  padding-right: 80px !important;
+}
+
+.home_icon li:hover {
+  font-size: 20px;
+}
+
+.switch {
+  margin-right: 20px;
+  margin-left: 15px;
+  position: relative;
+  display: inline-block;
+  width: 15px;
+  height: 20px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .8s;
+  transition: .8s;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 12px;
+  width: 12px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #0681da;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #4d86b4;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(18px);
+  -ms-transform: translateX(18px);
+  transform: translateX(18px);
+}
+
+.slider.round {
+  border-radius: 40px;
+  margin-left: -31px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.status_message {
+  display: flex;
+  color: rgb(185, 194, 61);
+  margin: 15px 30px 0px 0px;
+  float: right;
+  padding: 5px;
+  background-color: rgba(128, 117, 75, 0.397);
+  border-radius: 5px;
+}
+
+.status_message hidden {
+  visibility: hidden;
+  opacity : 0;
+  transition: visibility 0s 2s, opacity 2s linear;
+}

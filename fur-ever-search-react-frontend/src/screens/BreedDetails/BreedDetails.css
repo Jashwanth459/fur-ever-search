@@ -1,0 +1,102 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.notifications-component {
+  margin-top: 70px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.container {
+  background-color: #446a70;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  background-attachment: fixed;
+}
+
+.row:first-of-type {
+  margin-top: 90px
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/* Temp css */
+.dog-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Center items in the container */
+  max-width: 1200px; /* Adjust as needed */
+  margin: 0 auto; /* Center the container on the page */
+}
+
+.dog-card {
+  width: 25%; /* Adjust to fit 3 cards in a row */
+  margin: 40px 20px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 1px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dog-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.search-container {
+  margin-top: 20px;
+}
+
+.search-input {
+  width: 400px !important;
+  height: 24px;
+  padding: 16px;
+  font-size: 24px;
+  border: 2px solid #333;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #555;
+}

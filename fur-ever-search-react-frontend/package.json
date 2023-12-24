@@ -1,0 +1,67 @@
+{
+    "name": "fur-ever-search",
+    "version": "0.1.0",
+    "private": true,
+    "homepage": "https://Jashwanth459.github.io/fur-ever-search/",
+    "dependencies": {
+        "@testing-library/jest-dom": "^5.11.9",
+        "@testing-library/react": "^11.2.5",
+        "@testing-library/user-event": "^12.6.3",
+        "axios": "^0.21.4",
+        "react": "^17.0.2",
+        "react-adsense": "^0.1.0",
+        "react-bootstrap": "^2.9.0",
+        "react-dom": "^17.0.2",
+        "react-icons": "^4.1.0",
+        "react-lazy-load-image-component": "^1.5.1",
+        "react-notifications-component": "^3.0.3",
+        "react-redux": "^7.2.2",
+        "react-router-dom": "^5.2.0",
+        "react-scripts": "4.0.1",
+        "react-select": "^5.8.0",
+        "react-youtube": "^7.14.0",
+        "redux": "^4.0.5",
+        "redux-thunk": "^2.3.0",
+        "typescript": "^4.1.3",
+        "uuid": "^9.0.1",
+        "web-vitals": "^0.2.4"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "@types/jest": "^26.0.20",
+        "@types/node": "^12.19.15",
+        "@types/react": "^16.14.50",
+        "@types/react-dom": "^16.9.21",
+        "@types/react-lazy-load-image-component": "^1.5.1",
+        "@types/react-notifications-component": "^2.4.0",
+        "@types/react-redux": "^7.1.16",
+        "@types/react-router-dom": "^5.1.7",
+        "@types/uuid": "^9.0.7",
+        "gh-pages": "^3.2.3"
+    }
+}

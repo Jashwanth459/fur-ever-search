@@ -1,0 +1,98 @@
+.breed-info-container {
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    /* border: 1px solid #ccc; */
+    border-radius: 4px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.breed-info-header {
+    text-align: center;
+}
+
+.breed-image {
+    width: 60%;
+    border-radius: 2px;
+}
+
+.breed-name {
+    margin-top: -48px;
+    font-size: 24px;
+    color: #333;
+}
+
+.breed-info-content {
+    margin-top: 20px;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+}
+
+.attributes {
+    margin-top: 20px;
+}
+
+.attribute {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.temperament {
+    margin-right: 5px;
+    padding: 5px 10px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #333;
+}
+
+.horizontal-line {
+    width: 100%;
+    /* Set the width of the line */
+    height: 4px;
+    /* Set the height/thickness of the line */
+    background-color: #ccc;
+    /* Set the color of the line */
+    margin: 60px 0;
+    margin-bottom: 0px;
+    /* Set margin to create space above and below the line */
+
+}
+
+/* styles.css */
+
+.feedback-button-container {
+    margin-top: 50px;
+
+    .button-default {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .like-button-selected {
+        background-color: green;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    
+    .dislike-button-selected {
+        background-color: #f44336;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    
+    .message {
+        margin-top: 10px;
+        font-size: 16px;
+        color: #333;
+    }
+}

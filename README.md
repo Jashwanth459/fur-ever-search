@@ -35,6 +35,7 @@
     - ```cd fur-ever-search-react-frontend```
     - ```npm i```
     - ```npm run start```
+- (Additional): ```fur-ever-seach-bs4-data-scraper``` is for scraping data from data source. Which is not required as data is already available in datasets inside ```fur-ever-search-flask-backend``` folder.
 
 
 # About the Project
