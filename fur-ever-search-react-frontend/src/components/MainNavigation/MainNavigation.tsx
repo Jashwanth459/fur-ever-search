@@ -36,7 +36,7 @@ function MainNavigation(props: any) {
       <nav>
         <ul className='home_icon'>
           <li>
-            <NavLink to='/fur-ever-search/' title='Home'><FaHome /></NavLink>
+            <NavLink to='/fur-ever-search-app/' title='Home'><FaHome /></NavLink>
           </li>
         </ul>
         <ul className='header_title'>
@@ -52,10 +52,10 @@ function MainNavigation(props: any) {
             <NavLink to='/fur-ever-search/liked' title='Liked'><FaHandHoldingHeart /> ({props.cartItemNumber.likedSum || 0})</NavLink>
           </li> */}
           <li>
-            <NavLink to='/user-info' title='User Recommendation'>{firstname && lastname && `${firstname}, ${lastname}     `}  <FaUserAlt /></NavLink>
+            <NavLink to='/fur-ever-search-app/user-info' title='User Recommendation'>{firstname && lastname && `${firstname}, ${lastname}     `}  <FaUserAlt /></NavLink>
           </li>
           {retrievedSessionData && <li>
-            <NavLink to='/user-info' title='Logout' onClick={handleLogout}><b style={{ fontSize: "24px" }}><IoIosLogOut /></b></NavLink>
+            <NavLink to='/fur-ever-search-app/user-info' title='Logout' onClick={handleLogout}><b style={{ fontSize: "24px" }}><IoIosLogOut /></b></NavLink>
           </li>}
           {/* <li>
             <NavLink to='/fur-ever-search/profile' title='Profile'><FaUserAlt /></NavLink>

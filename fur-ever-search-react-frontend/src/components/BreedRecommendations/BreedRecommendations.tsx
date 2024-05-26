@@ -1,11 +1,12 @@
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import Youtube from 'react-youtube';
 import { recommendationSubGroups } from '../RecommendationPreferences/helper'
 
 import './BreedRecommendations.css'
 import { RecommendationPreferences } from '../RecommendationPreferences';
+import { recommendationsBreedDataMock } from '../../data/breedRecommendation';
 
 const baseImgUrl = 'https://image.tmdb.org/t/p/original';
 
@@ -53,6 +54,7 @@ export function BreedRecommendations({ title, breedName }: any) {
             })
             .catch(error => {
                 console.error('Error fetching data:', error);
+                setRecommendedBreeds(recommendationsBreedDataMock)
             });
     }, [breedName, recommendationPreferences]);
 
@@ -63,10 +65,10 @@ export function BreedRecommendations({ title, breedName }: any) {
 
             <div className='recommendations_row'>
                 {recommendedBreeds.map((breed: any, index: number) => (
-                    <a href={`/breed-details/${breed?.breedName}`} key={index}>
+                    <NavLink to={`/fur-ever-search-app/breed-details/${breed?.breedName}`} key={index}>
                         <img alt={breed?.breedName} title={breed?.breedName} src={breed?.images[0]} />
                         <p>{breed?.breedName}</p>
-                    </a>
+                    </NavLink>
                 ))}
             </div>
             {/* {trailerUrl && <div className='youtube_embed'>

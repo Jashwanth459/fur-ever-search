@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import './Home.css';
 import { MainNavigation } from '../../components/MainNavigation';
 import { sendUserInteraction } from '../../helpers/userInteraction';
+import { formattedBreedsMock } from '../../data/breeds';
 
 export interface ILandings {
   landings: any
@@ -63,6 +64,9 @@ const Home: React.FC<any> = (props) => {
         })
         .catch(error => {
           console.error('Error fetching data:', error);
+          console.log('using local data'); 
+          setBreeds(formattedBreedsMock);
+          setFilteredBreeds(formattedBreedsMock);
         });
     }
   }, [showUserSpecificBreeds]);
@@ -96,7 +100,7 @@ const Home: React.FC<any> = (props) => {
       <div className="dog-container">
         {filteredBreeds.map((breed: any, index: number) => (
           breed.imageUrls[0] &&
-          <Link to={`/breed-details/${breed.name}`} className="dog-card" key={index} onClick={() => breedClick(breed)}>
+          <Link to={`/fur-ever-search-app/breed-details/${breed.name}`} className="dog-card" key={index} onClick={() => breedClick(breed)}>
             <img className="dog-image" src={breed.imageUrls[0]} alt={`Dog ${index + 1}`} />
             <p>{breed.name}</p>
           </Link>

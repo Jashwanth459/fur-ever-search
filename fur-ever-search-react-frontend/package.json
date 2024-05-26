@@ -1,8 +1,8 @@
 {
-    "name": "fur-ever-search",
+    "name": "fur-ever-search-app",
     "version": "0.1.0",
     "private": true,
-    "homepage": "https://Jashwanth459.github.io/fur-ever-search/",
+    "homepage": "https://Jashwanth459.github.io/fur-ever-search-app/",
     "dependencies": {
         "@testing-library/jest-dom": "^5.11.9",
         "@testing-library/react": "^11.2.5",

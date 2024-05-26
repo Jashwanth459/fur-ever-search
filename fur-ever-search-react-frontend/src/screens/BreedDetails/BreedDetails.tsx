@@ -8,6 +8,7 @@ import { MainNavigation } from '../../components/MainNavigation';
 import BreedInfo from './BreedInfo';
 import { FindNearestBreed } from '../../components/FindNearestBreed';
 import { RecommendationPreferences } from '../../components/RecommendationPreferences'
+import { breedDetailsMock } from '../../data/breedDetails';
 
 export interface ILandings {
   landings: any
@@ -40,6 +41,7 @@ function BreedDetails(props: any) {
       })
       .catch(error => {
         console.error('Error fetching data:', error);
+        setBreedInfo(breedDetailsMock as any);
       });
   }, []);
 

@@ -2,22 +2,22 @@ import { Home as HomePage, UserInfo, MatchBreeds, BreedDetails } from '../screen
 
 export const routes = [ 
     {
-        path: '/fur-ever-search/',
+        path: '/fur-ever-search-app/',
         exact: true,
         content: HomePage
     },
     {
-        path: '/user-info/',
+        path: '/fur-ever-search-app/user-info/',
         exact: true,
         content: UserInfo
     },
     {
-        path: '/match-breeds/',
+        path: '/fur-ever-search-app/match-breeds/',
         exact: true,
         content: MatchBreeds
     },
     {
-        path: '/breed-details/:breedName',
+        path: '/fur-ever-search-app/breed-details/:breedName',
         exact: true,
         content: BreedDetails
     }
